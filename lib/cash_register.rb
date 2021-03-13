@@ -18,3 +18,5 @@ def add_item(title, price, quantity = 1)
   @total = @total + adjusted_price
   @items.fill(title, @items.size, quantity)
 end
+
+end
