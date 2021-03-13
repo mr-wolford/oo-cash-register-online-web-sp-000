@@ -19,7 +19,7 @@ def add_item(title, price, quantity = 1)
   @items.fill(title, @items.size, quantity)
 end
 
-def add_discount
+def apply_discount
   if @discount != nil
     x = 100.0 - @discount.to_f
     percentage = x * 0.01
