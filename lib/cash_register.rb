@@ -26,6 +26,8 @@ def apply_discount
     adjusted_price = @total * percentage
     self.total = adjusted_price
     puts "After the discount, the total comes to $#{@total}."
+  else
+    puts "There is no discount to apply."
   end
 end
 
