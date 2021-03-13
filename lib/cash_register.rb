@@ -5,13 +5,8 @@ class CashRegister
 
 def initialize(discount = nil)
   @total = 0
+  @discount = discount
   @items = []
-  if discount != nil
-    x = 100.0 - discount
-    @discount = x * 0.01
-  else
-    @discount = nil
-  end
 end
 
 def total
@@ -24,8 +19,4 @@ def add_item(title, price, quantity = 1)
   @items.fill(title, @items.size, quantity)
 end
 
-def apply_discount
-  discounted_price = @total - @discount
-end
 
-end
