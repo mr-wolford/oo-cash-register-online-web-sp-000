@@ -21,6 +21,7 @@ end
 
 def apply_discount
   discounted_price = @total - @discount
+  binding.pry
 end
 
 end
