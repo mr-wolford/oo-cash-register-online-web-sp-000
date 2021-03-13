@@ -21,5 +21,6 @@ end
 
 def apply_discount
   discounted_price = @total - @discount
+end
 
 end
