@@ -16,7 +16,7 @@ end
 def add_item(title, price, quantity = 1)
   adjusted_price = price * quantity
   @total = @total + adjusted_price
-  @items.push(title * quantity)
+  quantity.times { |x| @items << x }
   binding.pry
 end
 
