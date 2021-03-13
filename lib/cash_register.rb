@@ -18,7 +18,7 @@ def add_item(title, price, quantity = 1)
   @total = @total + adjusted_price
   @items.fill(title, @items.size, quantity)
   @voided_price = price
-  @voided_item = quantity 
+  @voided_item = quantity
 end
 
 def apply_discount
@@ -37,7 +37,7 @@ def void_last_transaction
   @total = self.total - voided
   @items = self.items[0..-@voided_item]
 end
-  
+
 end
 
 
