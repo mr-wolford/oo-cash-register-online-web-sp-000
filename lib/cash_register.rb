@@ -34,7 +34,6 @@ end
 
 def void_last_transaction
   @total = self.total - voided
-  binding.pry
 end
 
 
