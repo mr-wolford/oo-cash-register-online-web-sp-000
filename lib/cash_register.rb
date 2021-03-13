@@ -22,7 +22,7 @@ end
 def add_discount
   if @discount != nil
     x = 100.0 - @discount.to_f
-    percentage = x * .01
+    percentage = x * 0.01
     adjusted_price = @total * percentage
     puts "After the discount, the total comes to $#{adjusted_price}."
   end
