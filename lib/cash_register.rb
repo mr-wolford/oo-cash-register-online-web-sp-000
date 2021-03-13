@@ -17,6 +17,7 @@ def add_item(title, price, quantity = 1)
   adjusted_price = price * quantity
   @total = @total + adjusted_price
   @items.fill(title, @items.size, quantity)
+  @voided = price
 end
 
 def apply_discount
@@ -32,6 +33,9 @@ def apply_discount
 end
 
 def void_last_transaction
+  
+
+end
 
 
 end
