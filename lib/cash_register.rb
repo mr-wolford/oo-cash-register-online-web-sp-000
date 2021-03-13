@@ -19,4 +19,14 @@ def add_item(title, price, quantity = 1)
   @items.fill(title, @items.size, quantity)
 end
 
+def add_discount
+  if @discount != nil
+    x = 100.0 - @discount.to_f
+    percentage = x * .01
+    adjusted_price = @total * percentage
+    puts "After the discount, the total comes to $#{adjusted_price}."
+    
+
+end
+
 end
