@@ -8,6 +8,7 @@ def initialize(discount = nil)
   if discount != nil
     x = 100.0 - discount
     @discount = x * 0.01
+  end
   @items = []
 end
 
