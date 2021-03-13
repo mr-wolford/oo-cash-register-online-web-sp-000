@@ -17,7 +17,6 @@ end
 def add_item(title, price, quantity = 1)
   adjusted_price = price * quantity
   @total = @total + adjusted_price
-  @items << title
   binding.pry
 end
 
