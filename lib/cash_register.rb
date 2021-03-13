@@ -17,7 +17,7 @@ def add_item(title, price, quantity = 1)
   adjusted_price = price * quantity
   @total = @total + adjusted_price
   @items.fill(title, @items.size, quantity)
-  @voided_price = price
+  @voided_price = price * quantity
   @voided_item = quantity
 end
 
