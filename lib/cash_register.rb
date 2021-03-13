@@ -24,7 +24,7 @@ def apply_discount
     x = 100.0 - @discount.to_f
     percentage = x * 0.01
     adjusted_price = @total * percentage
-    @total = self.total - adjusted_price
+    self.total = adjusted_price
     puts "After the discount, the total comes to $#{adjusted_price}."
     binding.pry
   end
