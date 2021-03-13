@@ -10,7 +10,7 @@ def initialize(discount = nil)
     x = 100.0 - discount
     @discount = x * 0.01
   else
-    @discount = discount
+    @discount = nil
   end
 end
 
