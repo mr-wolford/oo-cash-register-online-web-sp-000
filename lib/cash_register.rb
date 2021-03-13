@@ -3,7 +3,7 @@ require 'pry'
 class CashRegister
   attr_accessor :discount, :total, :items
 
-def initialize(discount = 0)
+def initialize(discount = nil)
   @total = 0
   x = 100.0 - discount
   @discount = x * 0.01
