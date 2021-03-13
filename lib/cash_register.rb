@@ -25,8 +25,7 @@ def add_discount
     percentage = x * .01
     adjusted_price = @total * percentage
     puts "After the discount, the total comes to $#{adjusted_price}."
-
-
+  end
 end
 
 end
