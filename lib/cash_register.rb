@@ -36,6 +36,9 @@ end
 def void_last_transaction
   @total = self.total - voided
   @items = self.items[0..-@voided_item]
+  if @items == []
+    @items = 0.0
+  end
 end
 
 end
